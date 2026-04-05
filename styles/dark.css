@@ -1,12 +1,33 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+
+:root {
+  --bg-color-dark: #050a1b;
+  --text-color-dark: #F1B2CE;
+  --bg-title-color-dark: #FF0070;
+  --decorated-color-dark: #FF0070;
+  --color-title-dark: #DB00FF;
+  --focus-color: #F1B2CE;
+}
 
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  .page, .header__description-text {
+    background-color: var( --bg-color-dark);
+  }
+
+  .header__theme-menu-button {
+    color: var(--bg-title-color-dark);
+  }
+
+  .article__title, .header__description {
+    color: var( --bg-color-dark);
+    background-color: var(--bg-title-color-dark);
+  }
+
+  .header__title, .footer__title {
+    color: var(--color-title-dark);
+    text-shadow: 4px 4px 0 var(--decorated-color-dark);
+  }
+
+  .article__text {
+    color: var(--text-color-dark);
+  }
 }

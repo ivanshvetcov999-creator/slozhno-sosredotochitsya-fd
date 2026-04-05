@@ -1,4 +1,44 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --font-main: "IBM Plex Mono", sans-serif;
+  --base-font-size: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --title-font-size: clamp(7.25rem, 6rem + 8vw, 9.5rem);
+  --header-font-size: 1.125rem;
+  --header-padding: 10px;
+  --section-gap: clamp(40px, 5vw, 60px);
+  --article-gap: 20px;
+  --header-height: 100vh;
+  --content-max-width: 700px;
+  --menu-button-width: 70px;
+  --menu-button-height: 26px;
+  ---article-gap: 10px;
+  --section-article-gap: 20px;
+  --main-offset: clamp(0.625rem, 0.45rem + 0.9vw, 1.25rem);
+  --header-margin-top: 50px;
+  --main-padding: 38px 10px;
+  --section-padding: 47px;
+  --image-padding: 10px;
+  --article-margin-top: 15px;
+  --min-height-HF: 1024px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --main-padding: 65px 20px;
+    --header-margin-top: 182px;
+    --section-padding: 76px;
+    --image-padding: 1px;
+    --header-padding: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --main-padding: 60px 20px;
+    --section-gap: 40px;
+    --section-article-gap: 20px;
+    --gallery-gap: 20px;
+    --section-padding: 77px;
+    --image-padding: 20px;
+    --min-height-HF: 768px;
+  }
+}

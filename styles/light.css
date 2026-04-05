@@ -1,12 +1,66 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+:root {
+  --bg-color: #fff;
+  --text-color: #353430;
+  --bg-title-color: #FF8DCB;
+  --decorated-color: #353430;
+  --color-title: #FFC2E6;
+}
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  .page {
+    background-color: var(--bg-color);
+  }
+
+  .header {
+    background-image: none;
+  }
+
+  .header__theme-menu-button, .content-section__title, .article__title, .header__description-text, .article__text {
+    color: var(--text-color);
+  }
+
+  .header__theme-menu-button {
+    border: 1px solid var(--decorated-color);
+  }
+
+  .header__description, .article__title {
+    color: var(--text-color);
+    background-color: var(--bg-title-color);
+  }
+
+  .header__rec {
+    display: none;
+  }
+
+  .decorated-zone::before, .decorated-zone::after {
+    border-color: var( --decorated-color);
+  }
+
+  .header__title, .footer__title {
+    color: var(--color-title);
+    text-shadow: 4px 4px 0 var(--bg-title-color);
+  }
+
+  .header__theme-menu-button:hover {
+    outline: 1px solid var( --decorated-color);
+  }
+
+  .header__theme-menu-button:focus-visible {
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom: 1px solid var( --decorated-color);
+  }
+
+  .header__theme-menu-button_active {
+    outline: 1px solid var(--decorated-color);
+  }
+
+  .article__link:hover {
+    border-bottom: 1px solid var( --decorated-color);
+  }
+
+  .article__link:focus-visible {
+    outline: 1px solid var( --decorated-color);
+  }
 }
