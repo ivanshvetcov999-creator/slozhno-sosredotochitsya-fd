@@ -12,22 +12,25 @@
   --menu-button-height: 26px;
   ---article-gap: 10px;
   --section-article-gap: 20px;
-  --main-offset: clamp(0.625rem, 0.45rem + 0.9vw, 1.25rem);
-  --header-margin-top: 50px;
-  --main-padding: 38px 10px;
+  --main-offset: 10px;
+  --header-margin-top: 55px;
+  --main-padding: 42px 10px;
   --section-padding: 47px;
   --image-padding: 10px;
   --article-margin-top: 15px;
   --min-height-HF: 1024px;
+  --padding-button: 1.5px 15px;
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   :root {
-    --main-padding: 65px 20px;
+    --main-padding: 63px 20px;
     --header-margin-top: 182px;
     --section-padding: 76px;
     --image-padding: 1px;
     --header-padding: 20px;
+    --main-offset: 20px;
   }
 }
 
@@ -40,5 +43,6 @@
     --section-padding: 77px;
     --image-padding: 20px;
     --min-height-HF: 768px;
+    --main-offset: 20px;
   }
 }

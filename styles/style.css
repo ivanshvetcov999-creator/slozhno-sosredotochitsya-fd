@@ -75,7 +75,6 @@
 }
 
 .header__theme-menu-item {
-  padding-right: 5px;
   padding-top: 9px;
 }
 
@@ -112,10 +111,6 @@
   border-left-color: transparent;
   border-right-color: transparent;
   border-bottom: 1px solid var(--decorated-color-dark);
-}
-
-.header__theme-menu-button_active {
-  pointer-events: none;
 }
 
 .header__title {
@@ -264,6 +259,7 @@
     grid-row: 3;
     justify-self: end;
     max-width: 364px;
+    margin-bottom: 20px;
   }
 
   .header__theme-menu {
@@ -300,10 +296,6 @@
     flex-direction: column;
     gap: 20px;
     width: 100%;
-  }
-
-  .row_section .content-section__articles {
-    grid-column: auto;
   }
 
   .content-section_type_gallery {
@@ -375,6 +367,15 @@
     margin-top: 10px;
     margin-left: 5px;
   }
+
+  .header__theme-menu-button {
+    padding: var(--padding-button);
+  }
+
+  .header__theme-menu-item {
+    padding-right: 5px;
+  }
+
 
   .header__theme-menu-list {
     display: flex;
