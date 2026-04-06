@@ -1,33 +1,22 @@
 
 :root {
-  --bg-color-dark: #050a1b;
-  --text-color-dark: #F1B2CE;
-  --bg-title-color-dark: #FF0070;
-  --decorated-color-dark: #FF0070;
-  --color-title-dark: #DB00FF;
+  --bg-image: url(/images/cover-image-dark.png);
+  --bg-color: #000028;
+  --text-color: #F1B2CE;
+  --bg-title-color: #FF0070;
+  --title-text-color: #000028;
+  --tx-color: #FF0070;
+  --color-title: #DB00FF;
   --focus-color: #F1B2CE;
 }
 
 :root.theme-dark {
-  .page, .header__description-text {
-    background-color: var( --bg-color-dark);
-  }
-
-  .header__theme-menu-button {
-    color: var(--bg-title-color-dark);
-  }
-
-  .article__title, .header__description {
-    color: var( --bg-color-dark);
-    background-color: var(--bg-title-color-dark);
-  }
-
-  .header__title, .footer__title {
-    color: var(--color-title-dark);
-    text-shadow: 4px 4px 0 var(--decorated-color-dark);
-  }
-
-  .article__text {
-    color: var(--text-color-dark);
-  }
+  --bg-image: url(/images/cover-image-dark.png);
+  --bg-color: #000028;
+  --text-color: #F1B2CE;
+  --bg-title-color: #FF0070;
+  --title-text-color: #000028;
+  --tx-color: #FF0070;
+  --color-title: #DB00FF;
+  --focus-color: #F1B2CE;
 }
