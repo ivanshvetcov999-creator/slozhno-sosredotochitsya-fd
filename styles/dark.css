@@ -1,17 +1,5 @@
-
-:root {
-  --bg-image: url(/images/cover-image-dark.png);
-  --bg-color: #000028;
-  --text-color: #F1B2CE;
-  --bg-title-color: #FF0070;
-  --title-text-color: #000028;
-  --tx-color: #FF0070;
-  --color-title: #DB00FF;
-  --focus-color: #F1B2CE;
-}
-
 :root.theme-dark {
-  --bg-image: url(/images/cover-image-dark.png);
+  --bg-image: url(../images/cover-image-dark.png);
   --bg-color: #000028;
   --text-color: #F1B2CE;
   --bg-title-color: #FF0070;
@@ -20,3 +8,5 @@
   --color-title: #DB00FF;
   --focus-color: #F1B2CE;
 }
+
+

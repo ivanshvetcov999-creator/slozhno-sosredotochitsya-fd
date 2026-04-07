@@ -1,5 +1,5 @@
 :root {
-  --bg-image: url(/images/cover-image-dark.png);
+  --bg-image: url(../images/cover-image-dark.png);
   --bg-color: #000028;
   --text-color: #F1B2CE;
   --bg-title-color: #FF0070;
@@ -21,7 +21,7 @@
   --header-margin-top: 55px;
   --main-padding: 42px 10px;
   --section-padding: 49px;
-  --image-padding: 3px;
+  --image-padding: 8px;
   --article-margin-top: 15px;
   --min-height-hf: 1024px;
   --padding-button: 1.5px 15px;
@@ -46,7 +46,7 @@
     --gallery-gap: 20px;
     --section-padding: 55px;
     --image-padding: 20px;
-    --min-height-HF: 768px;
+    --min-height-hf: 768px;
     --main-offset: 20px;
     --header-margin-top: 10px;
     --image-padding: 17px;
